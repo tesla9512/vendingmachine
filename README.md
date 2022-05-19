@@ -1,6 +1,6 @@
 # vendingmachine
 
-##기능 구현하기
+## 기능 구현하기
 
 https://github.com/tesla9512/java-baseball-practice
 
