@@ -1,10 +1,10 @@
-package vendingmachine.mech;
+package vendingmachine.element;
 
-public class Product {
+public class Goods {
     private int price;
     private int quantity;
 
-    public Product(int price, int quantity) {
+    public Goods(int price, int quantity) {
         this.price = price;
         this.quantity = quantity;
     }

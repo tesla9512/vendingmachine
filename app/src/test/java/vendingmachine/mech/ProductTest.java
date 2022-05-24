@@ -2,10 +2,12 @@ package vendingmachine.mech;
 
 import org.junit.jupiter.api.Test;
 
+import vendingmachine.element.Goods;
+
 public class ProductTest {
     @Test
     void setProductTest() {
-        Product product1 = new Product(2000, 20);
+        Goods product1 = new Goods(2000, 20);
 
         System.out.println("price = " + product1.getPrice() + " qty = " + product1.getQuantity());
 

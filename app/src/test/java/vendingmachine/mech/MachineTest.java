@@ -1,8 +1,8 @@
 package vendingmachine.mech;
 
-import static org.hamcrest.Matchers.is;
+// import static org.hamcrest.Matchers.is;
 
-import org.hamcrest.MatcherAssert;
+// import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
 
 public class MachineTest {
@@ -11,7 +11,7 @@ public class MachineTest {
 
     @Test
     void coinTest() {
-        machine.setCoin(4990);
+        machine.setCoin(10000);
         machine.printCoinQty();
     }
 
@@ -22,13 +22,13 @@ public class MachineTest {
         machine.refund();
     }
 
-    @Test
-    void productTest() {
-        machine.setGoods("[삼다수,800,1]");
+    // @Test
+    // void productTest() {
+    // machine.setGoods("[삼다수,800,1]");
 
-        MatcherAssert.assertThat(machine.isExistGoods("삼다수"), is(true));
-        MatcherAssert.assertThat(machine.isExistGoods("콜라"), is(false));
-    }
+    // MatcherAssert.assertThat(machine.isExistNameOfGoods("삼다수"), is(true));
+    // MatcherAssert.assertThat(machine.isExistNameOtGoods("콜라"), is(false));
+    // }
 
     @Test
     void orderTest() {

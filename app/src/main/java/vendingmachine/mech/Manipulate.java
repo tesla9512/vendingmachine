@@ -20,7 +20,7 @@ public class Manipulate {
         System.out.print("투입할 금액을 설정 : ");
         machine.setCash(Integer.parseInt(sc.nextLine()));
 
-        while (machine.getCash() > machine.getMinPrice()) {
+        while (machine.getCash() > 0) {
             System.out.println("잔액 : " + machine.getCash());
             System.out.print("구매할 상품을 입력 : ");
 
@@ -31,16 +31,7 @@ public class Manipulate {
                 break;
             }
 
-            if (machine.isExistGoods(name) == false) {
-                System.out.println("상품이 존재하지 않습니다. 다시 입력하세요.");
-                continue;
-            }
-
             machine.order(name);
-        }
-        // 잔액 부족으로 반복문이 끝났다면 잔액을 반환처리
-        if (machine.getCash() != 0) {
-            machine.refund();
         }
 
         sc.close();
