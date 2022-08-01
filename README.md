@@ -1,5 +1,5 @@
 # vendingmachine
-## 자판기 자바판
+## 자판기 자바
 
 > https://github.com/woowacourse/java-vendingmachine-precourse
 
